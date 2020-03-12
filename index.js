@@ -1,11 +1,7 @@
 var button = document.getElementById("getTree");
+button.onclick = sendData;
 
 async function sendData() {
-  await fetch("/.netlify/functions/api");
-}
-
-sendData().then(data => {
+  data = await fetch("/.netlify/functions/api");
   console.log(data);
-});
-
-button.onclick = sendData;
+}
