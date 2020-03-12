@@ -1,5 +1,5 @@
 var button = document.getElementById("getTree");
-button.onabort = sendData;
+button.onclick = sendData;
 
 const sendData = async () => {
   await await (await fetch("/.netlify/functions/api")).json();
