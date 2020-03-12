@@ -1,15 +1,6 @@
-const express = require("express");
-const serverless = require("serverless-http");
-
-const app = express();
-
-const router = express.Router();
-
-router.get("/", (req, res) => {
-  res.json({
-    hello: "JO!"
+exports.handler = function(event, context, callback) {
+  callback(null, {
+    statusCode: 200,
+    body: JSON.stringify({ msg: "Hello World!" })
   });
-});
-
-app.use("", router);
-module.exports.handler = serverless(app);
+};
