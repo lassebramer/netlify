@@ -13,7 +13,7 @@
   "dependencies": {
     "@prisma/dmmf": "^0.1.26",
     "@prisma/generator-helper": "^2.0.0-preview024",
-    "@prisma/sdk": "^2.0.0-preview024",
+    "@prisma/sdk": "^2.20.0",
     "babel-polyfill": "^6.26.0",
     "dagre": "^0.8.5",
     "lodash": "^4.17.15",
